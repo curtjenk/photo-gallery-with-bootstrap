@@ -1,0 +1,51 @@
+<!DOCTYPE html> <!-- declares this is an html5 page -->
+<html lang="en">
+	<head>
+		<title>Image Gallery using Bootstrap</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		
+		<style type="text/css">
+		
+			.col-centered{
+				float: none;
+				margin: 0 auto;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<img class="img-thumbnail"  src="images/DSC02811.JPG" style="width:35%; display:block; margin:auto;">
+					<h2>Unit 1 - Day 1 - My first project : rebooted with Bootstrap on Day 8</h2>
+				</div>
+			</div>
+			
+			<br />
+			
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<img class="img-thumbnail" src="images/image1.jpg" name="img1" onmouseenter="preview.src=img1.src">
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<img class="img-thumbnail" src="images/image2.jpg" name="img2" onmouseenter="preview.src=img2.src">
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<img class="img-thumbnail" src="images/image3.jpg" name="img3" onmouseenter="preview.src=img3.src">
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<img class="img-thumbnail" src="images/image4.jpg" name="img4" onmouseenter="preview.src=img4.src">
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-centered">
+						<img class="img-thumbnail" src="images/image5.jpg" name="img5" onmouseenter="preview.src=img5.src">
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<img name="preview" src="images/image1.jpg">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
